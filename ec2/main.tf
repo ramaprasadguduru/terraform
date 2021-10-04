@@ -11,4 +11,12 @@ resource "aws_instance" "ram" {
     Name = var.instance_name
   }
 }
+output "instance_id" {
+  description = "ID of the EC2 instance"
+  value       = aws_instance.app_server.id
+}
 
+output "instance_public_ip" {
+  description = "Public IP address of the EC2 instance"
+  value       = aws_instance.ram.public_ip
+}
