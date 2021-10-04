@@ -8,10 +8,7 @@ resource "aws_instance" "app_server" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "rama"
+    Name = "prasad"
   }
 }
- resource "aws_instance" "app_server" {
-  +ami           = "ami-03d5c68bab01f3496"
-   instance_type = "t2.micro"
- }
+
