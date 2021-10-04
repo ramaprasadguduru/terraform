@@ -13,7 +13,7 @@ resource "aws_instance" "ram" {
 }
 output "instance_id" {
   description = "ID of the EC2 instance"
-  value       = aws_instance.app_server.id
+  value       = aws_instance.ram.id
 }
 
 output "instance_public_ip" {
