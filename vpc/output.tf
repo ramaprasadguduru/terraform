@@ -92,7 +92,7 @@ resource "aws_eip" "ip" {
       }
 
       tags = {
-        Name = "custom"
+        Name = "default"
       }
     
     }
