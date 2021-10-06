@@ -12,13 +12,16 @@ terraform {
       version = "~> 3.27"
     }
   }
-
-  required_version = ">= 0.14.9"
+//terraform validate 
+ required_version = ">= 0.14.9"
 }
 
 provider "aws" {
   region     = "us-east-1"
+
+  
 }
+
 # Create VPC
 # terraform aws create vpc
 resource "aws_vpc" "vpc" {
