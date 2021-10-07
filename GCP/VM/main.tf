@@ -9,11 +9,12 @@ terraform {
 
 provider "google" {
 
-  credentials = file()
-  project = "shaped-manifest-327006"
+ credentials = file("C:/Users/Public/gcpcredentials/active-cirrus-328217-7e8d5ad23ad9.json")
+ project = "active-cirrus-328217"
   region  = "us-central1"
-  zone    = "us-central1-c"
+  zone    = "us-central1-a"
 }
+
 resource "google_compute_instance" "vm_instance" {
   name         = "terraform-instance"
   machine_type = "f1-micro"
